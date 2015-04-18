@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="560.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+<AnchorPane prefHeight="560.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Recetario_principalController">
    <children>
       <SplitPane orientation="VERTICAL" prefHeight="504.0" prefWidth="600.0">
         <items>
@@ -17,69 +17,34 @@
                     <items>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                            <children>
-                              <ListView layoutX="1.0" prefHeight="405.0" prefWidth="242.0" />
                               <Button layoutX="14.0" layoutY="415.0" mnemonicParsing="false" text="Abrir" />
                               <Button layoutX="98.0" layoutY="415.0" mnemonicParsing="false" text="Editar" />
                               <Button layoutX="186.0" layoutY="416.0" mnemonicParsing="false" text="Borrar" />
+                              <TableView fx:id="tabla_recetas" layoutX="-2.0" prefHeight="407.0" prefWidth="249.0">
+                                <columns>
+                                  <TableColumn fx:id="columna_recetas" prefWidth="248.0" text="Recetas" />
+                                </columns>
+                              </TableView>
                            </children>
                         </AnchorPane>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                            <children>
-                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="75.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
-                              <Label alignment="CENTER" layoutX="87.0" layoutY="25.0" prefHeight="17.0" prefWidth="174.0" text="Título" />
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="80.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label fx:id="titulo" alignment="CENTER" layoutX="87.0" layoutY="25.0" prefHeight="17.0" prefWidth="174.0" text="Título" />
                               <Label layoutX="147.0" layoutY="226.0" text="Ingredientes" />
                               <Label layoutX="24.0" layoutY="257.0" text="Dificultad" />
                               <Label layoutX="24.0" layoutY="280.0" text="Valoración" />
                               <Label layoutX="24.0" layoutY="303.0" text="Comensales" />
-                              <Label layoutX="87.0" layoutY="257.0" text="***" />
-                              <Label layoutX="87.0" layoutY="280.0" text="***" />
-                              <Label layoutX="95.0" layoutY="303.0" text="***" />
-                              <ListView layoutX="126.0" layoutY="257.0" prefHeight="170.0" prefWidth="200.0" />
+                              <Label fx:id="dificultad" layoutX="87.0" layoutY="257.0" text="***" />
+                              <Label fx:id="valoracion" layoutX="87.0" layoutY="280.0" text="***" />
+                              <Label fx:id="comensales" layoutX="95.0" layoutY="303.0" text="***" />
+                              <TextArea fx:id="ingredientes" layoutX="147.0" layoutY="252.0" prefHeight="175.0" prefWidth="188.0" />
                            </children>
                         </AnchorPane>
                     </items>
                   </SplitPane>
-                  <MenuButton layoutX="34.0" layoutY="14.0" mnemonicParsing="false" text="Seleccionar platos">
-                    <items>
-                        <Menu mnemonicParsing="false" text="Primero">
-                           <items>
-                            <MenuItem mnemonicParsing="false" text="Arroces" />
-                            <MenuItem mnemonicParsing="false" text="Carnes" />
-                              <MenuItem mnemonicParsing="false" text="Pastas" />
-                              <MenuItem mnemonicParsing="false" text="Pescados" />
-                              <MenuItem mnemonicParsing="false" text="Dulces" />
-                           </items>
-                        </Menu>
-                        <Menu mnemonicParsing="false" text="Segundo">
-                           <items>
-                              <MenuItem mnemonicParsing="false" text="Arroces" />
-                              <MenuItem mnemonicParsing="false" text="Carnes" />
-                              <MenuItem mnemonicParsing="false" text="Pastas" />
-                              <MenuItem mnemonicParsing="false" text="Pescados" />
-                              <MenuItem mnemonicParsing="false" text="Dulces" />
-                           </items>
-                        </Menu>
-                        <Menu mnemonicParsing="false" text="Postres">
-                           <items>
-                              <MenuItem mnemonicParsing="false" text="Fruta" />
-                              <MenuItem mnemonicParsing="false" text="Helado" />
-                              <MenuItem mnemonicParsing="false" text="Chocolate" />
-                              <MenuItem mnemonicParsing="false" text="Otros" />
-                           </items>
-                        </Menu>
-                        <Menu mnemonicParsing="false" text="Comensales">
-                           <items>
-                              <MenuItem mnemonicParsing="false" text="1" />
-                              <MenuItem mnemonicParsing="false" text="2" />
-                              <MenuItem mnemonicParsing="false" text="3" />
-                              <MenuItem mnemonicParsing="false" text="4" />
-                              <MenuItem mnemonicParsing="false" text="5" />
-                           </items>
-                        </Menu>
-                    </items>
-                  </MenuButton>
-                  <Label layoutX="342.0" layoutY="18.0" text="Tipo de plato" />
-                  <Label layoutX="441.0" layoutY="18.0" text="Categoría" />
+                  <Label fx:id="plato" layoutX="342.0" layoutY="18.0" text="Tipo de plato" />
+                  <Label fx:id="categoria" layoutX="441.0" layoutY="18.0" text="Categoría" />
                </children>
             </AnchorPane>
         </items>
