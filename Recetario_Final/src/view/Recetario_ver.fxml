@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="800.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <SplitPane dividerPositions="0.3057644110275689" orientation="VERTICAL" prefHeight="800.0" prefWidth="608.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ImageView fitHeight="166.0" fitWidth="200.0" layoutX="70.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label alignment="CENTER" layoutX="70.0" layoutY="198.0" prefHeight="17.0" prefWidth="200.0" text="Título" />
+                  <Label layoutX="403.0" layoutY="200.0" text="Ingredeintes" />
+                  <ListView layoutX="336.0" layoutY="30.0" prefHeight="166.0" prefWidth="200.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="509.0" prefWidth="606.0">
+               <children>
+                  <Label layoutX="272.0" layoutY="14.0" text="Elaboración" />
+                  <TextArea layoutX="5.0" layoutY="37.0" prefHeight="459.0" prefWidth="596.0" />
+                  <Button layoutX="540.0" layoutY="512.0" mnemonicParsing="false" text="Salir" />
+                  <Button layoutX="179.0" layoutY="512.0" mnemonicParsing="false" text="Borrar" />
+                  <Button layoutX="67.0" layoutY="512.0" mnemonicParsing="false" text="Editar" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
