@@ -78,7 +78,7 @@
                     </items>
                   </MenuButton>
                   <Label layoutX="254.0" layoutY="18.0" text="tipo de plato" />
-                  <Label layoutX="353.0" layoutY="18.0" text="categoaria" />
+                  <Label layoutX="353.0" layoutY="18.0" text="categoria" />
                </children>
             </AnchorPane>
         </items>
