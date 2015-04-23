@@ -7,7 +7,7 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.fxml.FXMLLoader;
 
-//dani come caca
+//dani come cacaos
 
 public class Main extends Application {
 	@Override
