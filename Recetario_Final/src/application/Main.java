@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
     private Stage primaryStage;
-    private BorderPane rootLayout;
+    //private BorderPane rootLayout;
     private ObservableList<Receta> recetaData = FXCollections.observableArrayList();
 
     @Override
@@ -23,7 +23,7 @@ public class Main extends Application {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("Recetario");
 
-        initRootLayout();
+        //initRootLayout();
 
         showRecetario_Principal();
     }
@@ -47,7 +47,7 @@ public class Main extends Application {
     /**
      * Initializes the root layout.
      */
-    public void initRootLayout() {
+   /* public void initRootLayout() {
         try {
             
             FXMLLoader loader = new FXMLLoader();
@@ -61,11 +61,9 @@ public class Main extends Application {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
-    /**
-     * Shows the person overview inside the root layout.
-     */
+    
     public void showRecetario_Principal() {
     	try {
             
@@ -74,7 +72,7 @@ public class Main extends Application {
             AnchorPane recetario_principal = loader.load();
 
             
-            rootLayout.setCenter(recetario_principal);
+           // rootLayout.setCenter(recetario_principal);
 
             
             Recetario_principalController controller = loader.getController();
