@@ -1,0 +1,43 @@
+#BlueJ class context
+comment0.params=tallaMaximaEstimada
+comment0.target=TablaHash(int)
+comment1.params=n
+comment1.target=int\ siguientePrimo(int)
+comment1.text=\ \ Obtiene\ un\ numero\ primo\ MAYOR\ o\ IGUAL\ a\ n,\ i.e.\ el\ primo\ que\ sigue\ a\ n\r\n\ \ @param\ n\ \ \ Numero\ a\ partir\ del\ cual\ se\ buscara\ el\ siguiente\ primo\r\n\ \ @return\ \ \ \ El\ siguiente\ numero\ primo\ apartir\ de\ n\r\n
+comment10.params=
+comment10.target=librerias.estructurasDeDatos.modelos.ListaConPI\ claves()
+comment10.text=\ Devuelve\ una\ ListaConPI\ con\ las\ talla()\ claves\ del\ Map.\r\n
+comment11.params=
+comment11.target=double\ factorCarga()
+comment11.text=\ Factor\ de\ carga\ \=\ longitud\ media\ de\ las\ listas\ \=\ numero\ de\ elementos\ /\ longitud\ del\ array\r\n
+comment12.params=
+comment12.target=double\ desviacionTipica()
+comment12.text=\ Calcula\ la\ desviacion\ tipica\ de\ las\ longitudes\ de\ las\ listas\ \r\n
+comment13.params=
+comment13.target=java.lang.String\ histograma()
+comment13.text=\ Devuelve\ un\ String\ que\ representa\ el\ histograma\ de\ ocupacion\:\r\n\ lineas,\ cada\ una\ de\ ellas\ con\ dos\ valores\:\ longitudCubeta\ NumeroDeCubetas\ donde\:\r\n\ las\ lineas\ 0\ a\ 8\ contienen\ el\ n\u00FAmero\ de\ cubetas\ de\ esa\ longitud,\ 0<\=longitud<9\r\nla\ ultima\ linea\ (9)\ contiene\ el\ n\u00FAmero\ de\ cubetas\ de\ longitud\ 9\ o\ m\u00E1s
+comment2.params=n
+comment2.target=boolean\ esPrimo(int)
+comment2.text=\ \ Cromprueba\ si\ un\ numero\ es\ primo\r\n\ \ @param\ n\ \ \ Numero\ a\ comprobar\r\n\ \ @return\ \ \ \ true\ si\ el\ numero\ es\ primo,\ false\ al\ contrario\r\n
+comment3.params=c
+comment3.target=int\ indiceHash(java.lang.Object)
+comment3.text=\ Calcula\ la\ cubeta\ en\ la\ que\ debe\ estar\ un\ elemento\r\n\ con\ clave\ c.\ Para\ ello\ primero\ obtiene\ el\ valor\ de\r\n\ hash\ (hashCode)\ y\ a\ continuacion\ su\ indice\ hash\r\n\ @param\ c\ Clave\ del\ dato\ a\ localizar\r\n\ @return\ Cubeta\ en\ la\ que\ se\ encuentra\ el\ dato\r\n
+comment4.params=c\ v
+comment4.target=java.lang.Object\ insertar(java.lang.Object,\ java.lang.Object)
+comment4.text=\ A\u00F1ade\ la\ entrada\ (clave,valor)\ y\ devuelve\ el\ antiguo\ valor\r\n\ que\ tenia\ dicha\ clave,\ o\ null\ si\ no\ tenia\ ningun\ valor\ asociado\r\n
+comment5.params=c
+comment5.target=java.lang.Object\ eliminar(java.lang.Object)
+comment5.text=\ Elimina\ la\ entrada\ con\ clave\ c\ y\ devuelve\ su\ valor\ asociado,\r\n\ \ o\ null\ si\ no\ hay\ ninguna\ entrada\ con\ dicha\ clave.\r\n
+comment6.params=c
+comment6.target=java.lang.Object\ recuperar(java.lang.Object)
+comment6.text=\ Busca\ la\ clave\ c\ y\ devuelve\ su\ informacion\ asociada\r\n\ o\ null\ si\ no\ hay\ una\ entrada\ con\ dicha\ clave.\r\n
+comment7.params=
+comment7.target=boolean\ esVacio()
+comment7.text=\ Devuelve\ true\ si\ el\ Map\ esta\ vac\u00EDo,\ sin\ datos.\r\n
+comment8.params=
+comment8.target=int\ talla()
+comment8.text=\ Devuelve\ el\ numero\ de\ entradas\ que\ contiene\ el\ Map.\r\n
+comment9.params=
+comment9.target=void\ rehashing()
+comment9.text=\ Rehashing\r\n
+numComments=14
